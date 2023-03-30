@@ -90,3 +90,28 @@ while (i <= j)		//Langkah Algoritma no.10
 	q_sort(low, j - 1);								//langkah Algoritma no.12
 	//sort the list on the right of pivot using quick sort
 	q_sort(j + 1, high);							//Langkah Algoritma no.13
+}
+void display() {
+	cout << "\n===============" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "\n=============" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comparrassions: " << cmp_count << endl;
+	cout << " Number of data movement: " << mov_count << endl;
+}
+
+
+int main()
+{
+	input();
+	q_sort(0, n - 1);			//Sort the array using quick sort
+	display();
+	system("pause");
+
+	return 0;
+}
