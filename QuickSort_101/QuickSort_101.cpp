@@ -68,3 +68,8 @@ void q_sort(int low, int high)
 	while ((arr[j] > pivot) && (j >= low))		//Langkah Algoritma no.7
 	{
 		j--;									//Langkah Algoritma no.8
+		cmp_count++;
+	}
+
+	//if the greather element is on the left of the element
+	if (i < j)									//Langkah Algoritma no.9
