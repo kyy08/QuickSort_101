@@ -52,3 +52,5 @@ void q_sort(int low, int high)
 
 	i = low + 1;		//Langkah Algoritma no.3
 
+	j = high;			//Langkah Algoritma no.4
+
