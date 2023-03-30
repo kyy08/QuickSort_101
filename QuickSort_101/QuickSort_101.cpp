@@ -88,3 +88,5 @@ while (i <= j)		//Langkah Algoritma no.10
 	}
 	//Sort the list on the left of pivot using quick sort
 	q_sort(low, j - 1);								//langkah Algoritma no.12
+	//sort the list on the right of pivot using quick sort
+	q_sort(j + 1, high);							//Langkah Algoritma no.13
