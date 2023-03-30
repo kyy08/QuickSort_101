@@ -58,4 +58,5 @@ void q_sort(int low, int high)
 	{
 		//Search for an element greather than pivot
 	while ((arr[i] <= pivot) && (i <= high))	//Langkah Algortima no.5
-
+	{
+		i++;									//Langkah Algoritma no.6
