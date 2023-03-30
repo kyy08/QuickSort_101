@@ -42,5 +42,12 @@ void q_sort(int low, int high)
 {
 	int pivot, i, j;
 	if (low > high) //langkah algoritma no.1
+		return;
+
+	//Partition the list into two part:
+	//One containing elements les that or equal to pivot
+	//Outher containing elements greather than pivot
+
+	pivot = arr[low];	//Langkah Algoritma no.2
 
 
