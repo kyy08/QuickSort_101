@@ -54,8 +54,8 @@ void q_sort(int low, int high)
 
 	j = high;			//Langkah Algoritma no.4
 
-	while (i <= j)		//Langkah Algoritma no.10
-	{
+while (i <= j)		//Langkah Algoritma no.10
+{
 		//Search for an element greather than pivot
 	while ((arr[i] <= pivot) && (i <= high))	//Langkah Algortima no.5
 	{
@@ -78,6 +78,13 @@ void q_sort(int low, int high)
 		swap(i, j);
 		mov_count++;
 	}
-	}
+}
 	//Now containt the index of the last element in the sorted list
 	if (low < j);									//Langkah Algoritma no.11
+	{
+		//Move the pivot to its correct position in the list
+		swap(low, j);
+		mov_count++;
+	}
+	//Sort the list on the left of pivot using quick sort
+	q_sort(low, j - 1);								//langkah Algoritma no.12
